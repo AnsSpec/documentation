@@ -14,10 +14,15 @@
 `ansspec/defaults/main.yml`:
 
 ```yaml
-dir_bin: /opt/{{ software.name }}/bin
-dir_conf: /opt/{{ software.name }}/conf
-dir_data: /data/{{ software.name }}
-dir_log: /var/log/{{ software.name }}
+dir_bin: "/opt/{{ software.name }}/bin"
+dir_conf: "/opt/{{ software.name }}/conf"
+dir_data: "/data/{{ software.name }}"
+dir_log: "/var/log/{{ software.name }}"
+dir_tmp: "/tmp/{{ software.name }}"
+
+username: "{{ software.name }}"
+groupname: "{{ software.name }}"
+servicename: "{{ software.name }}"
 ```
 
 ### Role ansspec.{software}
