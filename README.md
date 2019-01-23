@@ -14,11 +14,11 @@
 `ansspec/defaults/main.yml`:
 
 ```yaml
-dir_bin: "/opt/{{ software.name }}/bin"
-dir_conf: "/opt/{{ software.name }}/conf"
-dir_data: "/data/{{ software.name }}"
-dir_log: "/var/log/{{ software.name }}"
-dir_tmp: "/tmp/{{ software.name }}"
+bin_path: "/opt/{{ software.name }}/bin"
+conf_path: "/opt/{{ software.name }}/conf"
+data_path: "/data/{{ software.name }}"
+log_path: "/var/log/{{ software.name }}"
+tmp_path: "/tmp/{{ software.name }}"
 
 username: "{{ software.name }}"
 groupname: "{{ software.name }}"
@@ -42,7 +42,7 @@ software:
   name:
   version:
 
-file_bin:
+bin_file:
 
-url_download:
+download_url:
 ```
